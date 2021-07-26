@@ -18,7 +18,9 @@
     "build": "npm run build:release",
     "build:release": "webpack --config ./.webpack/webpack.js",
     "build:examples": "webpack --config ./.webpack/webpack.dev.js",
-    "prepare": "npm run build",
+    "prepare": "npm run build:release",
+    "predeploy": "npm install && npm run build:release",
+    "prepublishOnly": "npm run build && npm run build:release"
   },
   "peerDependencies": {
     "cornerstone-core": "2.3.x",
