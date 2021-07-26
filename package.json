@@ -17,7 +17,8 @@
     "start": "webpack serve --config ./.webpack/webpack.dev.js --open --hot --inline",
     "build": "npm run build:release",
     "build:release": "webpack --config ./.webpack/webpack.js",
-    "build:examples": "webpack --config ./.webpack/webpack.dev.js"
+    "build:examples": "webpack --config ./.webpack/webpack.dev.js",
+    "prepare": "npm run build",
   },
   "peerDependencies": {
     "cornerstone-core": "2.3.x",
