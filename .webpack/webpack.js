@@ -8,7 +8,7 @@ module.exports = {
   entry: ENTRY_VIEWPORT,
   output: {
     path: OUT_PATH,
-    filename: 'index.js',
+    filename: 'index.umd.js',
     library: 'cornerstoneViewport',
     libraryTarget: 'umd'
   },
